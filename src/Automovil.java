@@ -13,4 +13,18 @@ public class Automovil {
         sb.append("\ncilidrada = " + this.cilidrada);
         return sb.toString();
     }
+
+    public String acelerar(int rpm) {
+        return "el auto " + this.fabricante + " acelerando a " + rpm + " rpm";
+    }
+
+    public  String frenar() {
+        return this.fabricante + " " + this.modelo + " frenando!";
+    }
+
+    public String aclerarFrenar(int rpm) {
+        String acelerar = this.acelerar(rpm);
+        String frenar = this.frenar();
+        return acelerar + "\n" + frenar;
+    }
 }
