@@ -6,43 +6,43 @@ public class Automovil {
     private double cilidrada;
     private int capacidadEstanque = 40;
 
-    public String leerFabricante() {
-        return this.fabricante;
+    public String getFabricante() {
+        return fabricante;
     }
 
-    public void asignarFabricante(String fabricante) {
+    public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
 
-    public String leerModelo() {
-        return this.modelo;
+    public String getModelo() {
+        return modelo;
     }
 
-    public void asignarModelo(String modelo) {
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
-    public String leerColor() {
-        return this.color;
+    public String getColor() {
+        return color;
     }
 
-    public void asignarColor(String color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
-    public double leerCilindrada() {
-        return this.cilidrada;
+    public double getCilidrada() {
+        return cilidrada;
     }
 
-    public void asignarCilindrada(double cilidrada) {
+    public void setCilidrada(double cilidrada) {
         this.cilidrada = cilidrada;
     }
 
-    public int leerCapacidadEstanque() {
-        return this.capacidadEstanque;
+    public int getCapacidadEstanque() {
+        return capacidadEstanque;
     }
 
-    public void asignarCapacidadEstanque(int capacidadEstanque) {
+    public void setCapacidadEstanque(int capacidadEstanque) {
         this.capacidadEstanque = capacidadEstanque;
     }
 
