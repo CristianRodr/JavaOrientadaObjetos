@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d277f1e-1833-49c8-9a17-6ac194ddd4e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Estanque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Rueda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TipoMotor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Automovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automovil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EjemploAutomovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EjemploAutomovil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EjemploAutomovilEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EjemploAutomovilEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EjemploAutomovilStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EjemploAutomovilStatic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjemploAutomovilEnum">
+  <component name="RunManager" selected="Application.EjemploAutomovil">
     <configuration name="EjemploAutomovil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EjemploAutomovil" />
       <module name="OrientadaObjetos" />
@@ -74,9 +73,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EjemploAutomovil" />
         <item itemvalue="Application.EjemploAutomovilEnum" />
         <item itemvalue="Application.EjemploAutomovilStatic" />
-        <item itemvalue="Application.EjemploAutomovil" />
       </list>
     </recent_temporary>
   </component>

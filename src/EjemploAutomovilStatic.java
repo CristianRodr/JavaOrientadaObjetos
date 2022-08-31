@@ -3,23 +3,32 @@ public class EjemploAutomovilStatic {
 
         Automovil.setCapacidadEstanqueEstatico(45);
         Automovil subaru = new Automovil("Subaru", "Impreza");
-        subaru.setCilidrada(2.0);
+        subaru.setMotor(new Motor(2.0, TipoMotor.BENCINA));
+        subaru.setEstanque(new Estanque());
         subaru.setColor(Color.BLANCO);
         subaru.setTipo(TipoAutomovil.HATCHBACK);
 
-
-        Automovil mazda = new Automovil("Mazda", "BT-50", Color.ROJO, 3.0);
+        Automovil mazda = new Automovil("Mazda", "BT-50", Color.ROJO, new Motor(3.0, TipoMotor.DIESEL));
         mazda.setTipo(TipoAutomovil.PICKUP);
         System.out.println("subaru.leerFabricante() = " + subaru.getFabricante());
-        System.out.println("mazda.leerFabricante() = " + mazda.getFabricante());
 
-        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS, 3.5, 50 );
+        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS,
+                new Motor(4.0, TipoMotor.DIESEL), new Estanque(50));
         nissan.setTipo(TipoAutomovil.PICKUP);
-        Automovil.setColorPatente(Color.VERDE);
+
+        Automovil nissan2 = new Automovil("Nissan", "Navara", Color.GRIS,
+                new Motor(3.5, TipoMotor.BENCINA), new Estanque(50));
+        nissan2.setColor(Color.AMARILLO);
+        nissan2.setTipo(TipoAutomovil.PICKUP);
+        Automovil.setColorPatente(Color.AZUL);
+
 
         System.out.println(subaru.detalle());
         System.out.println(mazda.detalle());
         System.out.println(nissan.detalle());
+
+        System.out.println(nissan2.detalle());
+        System.out.println("-------------------------------");
         System.out.println("Automovil.getColorPatente() = " + Automovil.getColorPatente());
         System.out.println("Kilometros por litros = " + Automovil.calcularConsumoEstatico(300, 60) );
         System.out.println("Velocidad maxima carretera: " + Automovil.VELOCIDAD_MAX_CARRETERA);
