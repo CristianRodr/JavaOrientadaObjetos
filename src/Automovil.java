@@ -10,6 +10,8 @@ public class Automovil {
     private static int capacidadEstanqueEstatico = 30;
     private static int ultimoId;
 
+    private TipoAutomovil tipo;
+
 
     public static final Integer VELOCIDAD_MAX_CARRETERA = 120;
     public static final int VELOCIDAD_MAX_CIUDAD = 60;
@@ -115,10 +117,19 @@ public class Automovil {
         sb.append("\nauto.id = " + this.id);
         sb.append("\nfabricante = " + this.fabricante);
         sb.append("\nmodelo = " + this.modelo);
+        sb.append("\nauto.tipo = " + this.getTipo().getDescripcion());
         sb.append("\ncolor = " + this.color);
         sb.append("\npatenteColor = " + colorPatente);
         sb.append("\ncilidrada = " + this.cilidrada);
         return sb.toString();
+    }
+
+    public TipoAutomovil getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoAutomovil tipo) {
+        this.tipo = tipo;
     }
 
     public String acelerar(int rpm) {
