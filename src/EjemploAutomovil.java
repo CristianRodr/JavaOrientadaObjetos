@@ -19,6 +19,8 @@ public class EjemploAutomovil {
         System.out.println(subaru.detalle());
         System.out.println(mazda.detalle());
         System.out.println(nissan.detalle());
+        System.out.println();
+
         System.out.println(subaru.acelerar(2500));
         System.out.println(subaru.frenar());
 

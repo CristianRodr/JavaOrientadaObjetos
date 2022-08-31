@@ -113,6 +113,9 @@ public class Automovil {
     }
 
     public Estanque getEstanque() {
+        if (estanque == null) {
+            this.estanque = new Estanque();
+        }
         return estanque;
     }
 
@@ -137,15 +140,21 @@ public class Automovil {
     }
 
     public String detalle() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("\nauto.id = " + this.id);
-        sb.append("\nfabricante = " + this.fabricante);
-        sb.append("\nmodelo = " + this.modelo);
-        sb.append("\nauto.tipo = " + this.getTipo().getDescripcion());
-        sb.append("\ncolor = " + this.color);
-        sb.append("\npatenteColor = " + colorPatente);
-        sb.append("\ncilidrada = " + this.motor.getCilindrada());
-        return sb.toString();
+        String detall = "\nauto.id = " + this.id +
+        "\nauto.fabricante = " + this.getFabricante() +
+                "\nauto.modelo = " + this.getModelo();
+
+        if (this.getTipo() != null) {
+            detall += "\nauto.tipo + " + this.getTipo().getDescripcion();
+        }
+
+        detall += "\nauto.color = " + this.color +
+                "\nauto.patenteColor + " + colorPatente;
+
+        if (this.motor != null) {
+            detall += "\nauto.cilindrada = " + this.motor.getCilindrada();
+        }
+        return detall;
     }
 
     public TipoAutomovil getTipo() {
@@ -172,11 +181,11 @@ public class Automovil {
     }
 
     public float calcularConsumo(int km, float porcentajeBencina) {
-        return km / (estanque.getCapacidad() * porcentajeBencina);
+        return km / (this.getEstanque().getCapacidad() * porcentajeBencina);
     }
 
     public float calcularConsumo(int km, int porcentajeBencida) {
-        return km / (this.estanque.getCapacidad() * (porcentajeBencida / 100f));
+        return km / (this.getEstanque().getCapacidad() * (porcentajeBencida / 100f));
     }
 
     public static float calcularConsumoEstatico(int km, int porcentajeBencida) {
