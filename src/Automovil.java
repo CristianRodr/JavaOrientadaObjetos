@@ -154,6 +154,20 @@ public class Automovil {
         if (this.motor != null) {
             detall += "\nauto.cilindrada = " + this.motor.getCilindrada();
         }
+
+        if (conductor != null) {
+            detall += "Conductor subaru: " + this.getConductor();
+        }
+        if (getRuedas() != null) {
+            detall += "\nRuedas del automovil: ";
+            for (Rueda r :
+                    this.getRuedas()) {
+                detall += "\n" + r.getFabricante() + ", aro: " + r.getAro() + ", ancho:  " + r.getAncho();
+            }
+        }
+
+        System.out.println("----------------------------------------------");
+
         return detall;
     }
 
