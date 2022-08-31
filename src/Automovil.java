@@ -3,10 +3,10 @@ public class Automovil {
     private int id = 0;
     private String fabricante;
     private String modelo;
-    private String color = COLOR_GRIS;
+    private Color color = Color.GRIS;
     private double cilidrada;
     private int capacidadEstanque = 40;
-    private static String colorPatente = "Naranja";
+    private static Color colorPatente = Color.NARANJO;
     private static int capacidadEstanqueEstatico = 30;
     private static int ultimoId;
 
@@ -31,17 +31,17 @@ public class Automovil {
         this.modelo = modelo;
     }
 
-    public Automovil(String fabricante, String modelo, String color) {
+    public Automovil(String fabricante, String modelo, Color color) {
         this(fabricante, modelo);
         this.color = color;
     }
 
-    public Automovil(String fabricante, String modelo, String color, double cilidrada) {
+    public Automovil(String fabricante, String modelo, Color color, double cilidrada) {
         this(fabricante, modelo, color);
         this.cilidrada = cilidrada;
     }
 
-    public Automovil(String fabricante, String modelo, String color, double cilidrada, int capacidadEstanque) {
+    public Automovil(String fabricante, String modelo, Color color, double cilidrada, int capacidadEstanque) {
         this(fabricante, modelo, color, cilidrada);
         this.capacidadEstanque = capacidadEstanque;
     }
@@ -70,11 +70,11 @@ public class Automovil {
         this.modelo = modelo;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -94,11 +94,11 @@ public class Automovil {
         this.capacidadEstanque = capacidadEstanque;
     }
 
-    public static String getColorPatente() {
+    public static Color getColorPatente() {
         return colorPatente;
     }
 
-    public static void setColorPatente(String colorPatente) {
+    public static void setColorPatente(Color colorPatente) {
         Automovil.colorPatente = colorPatente;
     }
 

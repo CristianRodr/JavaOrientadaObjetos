@@ -4,16 +4,16 @@ public class EjemploAutomovilStatic {
         Automovil.setCapacidadEstanqueEstatico(45);
         Automovil subaru = new Automovil("Subaru", "Impreza");
         subaru.setCilidrada(2.0);
-        subaru.setColor(Automovil.COLOR_BLANCO);
+        subaru.setColor(Color.BLANCO);
 
 
-        Automovil mazda = new Automovil("Mazda", "BT-50", Automovil.COLOR_ROJO, 3.0);
+        Automovil mazda = new Automovil("Mazda", "BT-50", Color.ROJO, 3.0);
         System.out.println("subaru.leerFabricante() = " + subaru.getFabricante());
         System.out.println("mazda.leerFabricante() = " + mazda.getFabricante());
 
-        Automovil nissan = new Automovil("Nissan", "Navara", Automovil.COLOR_GRIS, 3.5, 50 );
+        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS, 3.5, 50 );
 
-        Automovil.setColorPatente("Verde");
+        Automovil.setColorPatente(Color.VERDE);
 
         System.out.println(subaru.detalle());
         System.out.println(mazda.detalle());
