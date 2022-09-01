@@ -8,6 +8,7 @@ public class Automovil {
     private Estanque estanque;
     private Persona conductor;
     private Rueda[] ruedas;
+    private int indiceRuedas;
     private static Color colorPatente = Color.NARANJO;
     private static int capacidadEstanqueEstatico = 30;
     private static int ultimoId;
@@ -27,6 +28,7 @@ public class Automovil {
     //constructor
     public Automovil() {
         this.id = ++ultimoId;
+        this.ruedas = new Rueda[5];
     }
 
     public Automovil(String fabricante, String modelo) {
@@ -139,6 +141,12 @@ public class Automovil {
         this.ruedas = ruedas;
     }
 
+    public void addRueda(Rueda rueda) {
+        if (indiceRuedas < this.ruedas.length) {
+            this.ruedas[indiceRuedas++] = rueda;
+        }
+    }
+
     public String detalle() {
         String detall = "\nauto.id = " + this.id +
         "\nauto.fabricante = " + this.getFabricante() +
@@ -205,4 +213,11 @@ public class Automovil {
     public static float calcularConsumoEstatico(int km, int porcentajeBencida) {
         return km / (Automovil.capacidadEstanqueEstatico * (porcentajeBencida / 100f));
     }
+
+    @Override
+    public String toString() {
+        return this.id + " : " + fabricante + " " + modelo;
+    }
+
+
 }

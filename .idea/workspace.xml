@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d277f1e-1833-49c8-9a17-6ac194ddd4e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EjemploAutomovilRelacionesObjetos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EjemploAutomovilArreglo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automovil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EjemploAutomovilRelacionesObjetos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EjemploAutomovilRelacionesObjetos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TipoAutomovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TipoAutomovil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +49,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjemploAutomovilRelacionesObjetos">
+  <component name="RunManager" selected="Application.EjemploAutomovilArreglo">
     <configuration name="EjemploAutomovil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EjemploAutomovil" />
+      <module name="OrientadaObjetos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EjemploAutomovilArreglo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EjemploAutomovilArreglo" />
       <module name="OrientadaObjetos" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EjemploAutomovilArreglo" />
         <item itemvalue="Application.EjemploAutomovilRelacionesObjetos" />
         <item itemvalue="Application.EjemploAutomovilStatic" />
         <item itemvalue="Application.EjemploAutomovil" />
